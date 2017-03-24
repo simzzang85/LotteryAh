@@ -1,0 +1,13 @@
+start
+<%
+	setTimeout(function() {
+	
+		print('ok');
+		
+		resume();
+	}, 1000);
+	
+	pause();
+%>
+end
+<a href="/">Home</a>

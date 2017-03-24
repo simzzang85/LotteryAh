@@ -1,0 +1,6 @@
+{
+	"port": 8123,
+	"isDevMode": true,
+	"rootPath": "./www",
+	"restURI" : ["memos"]
+}

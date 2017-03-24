@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>My first NSP page</h1>
+		
+		\<%
+			// yes
+			var msg = 'Hello World!';
+		%>
+		\{{msg}}
+		
+		\\<%
+			// no
+			var msg = 'Hello World!';
+		%>
+		\\{{msg}}
+		<a href="/">Home</a>
+	</body>
+</html>
