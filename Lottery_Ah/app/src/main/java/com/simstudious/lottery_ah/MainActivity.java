@@ -1,5 +1,4 @@
-package com.capps.lotteryah;
-
+package com.simstudious.lottery_ah;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     public void AdsShow(){
 
         // Initialize the Mobile Ads SDK
-        MobileAds.initialize(this,"ca-app-pub-5527371243503810/6833952534");
+        MobileAds.initialize(this,"ca-app-pub-5527371243503810/3528818688");
 
         // Find Banner ad
         mAdView = findViewById(R.id.adView);
@@ -63,27 +62,12 @@ public class MainActivity extends AppCompatActivity {
         int[] numbers3 = new int[6];
         int[] numbers4 = new int[6];
         int[] numbers5 = new int[6];
-            /*for (int i = 0; i < 5; i++)
-            {
-                for(int j = 0; j < 5; j++)
-                {
-                    string txt1 = "seq" + i);// seq
-                    string txt2 = "num" + i) + j);// num1
-                    string txt3 = "num" + i) + j);// num1
-                    string txt4 = "num" + i) + j);// num1
-                    string txt5 = "num" + i) + j);// num1
-                    string txt6 = "num" + i) + j);// num1
-                    string txt7 = "numSp" + i); // seq
-                    tr[i] = findViewByid(R.id.)
-                }
-            }
-            */
         String type = "";
 
         RadioGroup rg1 = findViewById(R.id.radioGroup1);
         RadioButton rb1 = findViewById(R.id.tp1);
-        RadioButton rb2 = findViewById(R.id.tp2);
-        RadioButton rb3 = findViewById(R.id.tp3);
+        //RadioButton rb2 = findViewById(R.id.tp2);
+        //RadioButton rb3 = findViewById(R.id.tp3);
         RadioGroup rg2 = findViewById(R.id.radioGroup2);
         RadioButton cnt1 = findViewById(R.id.cnt1);
         RadioButton cnt2 = findViewById(R.id.cnt2);
@@ -92,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         int selectedId = rg2.getCheckedRadioButtonId();
         RadioButton rdoBtn = findViewById(selectedId);
 
+        type = "pw";
+        /*
         if (rdoBtn.getText().toString().equals("Powerball"))
         {
             type = "pw";
@@ -104,13 +90,13 @@ public class MainActivity extends AppCompatActivity {
         {
             type = "cash";
         }
+        */
         int selectedId2 = rg1.getCheckedRadioButtonId();
         RadioButton rdoBtn2 = findViewById(selectedId2);
 
         //String strToast = rdoBtn2.getText().toString();
         //Toast.makeText(getApplicationContext(),strToast,Toast.LENGTH_SHORT).show();
-        //Log.v("PickNum","LotteryAh000000:::::"+ rdoBtn2.getText().toString());
-        if (rdoBtn2.getText().toString().equals("1game"))
+        if (cnt1.isChecked())
         {
             //Log.v("PickNum","LotteryAh000000:::::"+ type+"::number::"+numbers1[0]);
             TextInitiate();
@@ -131,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
             tv15.setText(numbers1[4]+"");
             tv16.setText(numbers1[5]+"");
         }
-        else if (rdoBtn2.getText().toString().equals("3games"))
+        else if (cnt2.isChecked())
         {
             Log.v("PlaceNumToArry211111","TYPE:::::::number::");
             TextInitiate();
@@ -179,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
             tv36.setText(numbers3[5]+"");
 
         }
-        else if (rdoBtn2.getText().toString().equals("5games"))
+        else// if (rdoBtn2.isChecked())
         {
             //Log.v("PlaceNumToArry222222","TYPE:::::::number::");
             TextInitiate();
@@ -365,5 +351,4 @@ public class MainActivity extends AppCompatActivity {
         tv55.setText(" ");
         tv56.setText(" ");
     }
-
 }

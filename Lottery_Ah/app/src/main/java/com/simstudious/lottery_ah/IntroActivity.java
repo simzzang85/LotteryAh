@@ -1,4 +1,4 @@
-package com.capps.lotteryah;
+package com.simstudious.lottery_ah;
 
 import android.content.Intent;
 import android.os.Bundle;

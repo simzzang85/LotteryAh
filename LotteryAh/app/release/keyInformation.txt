@@ -1,0 +1,7 @@
+keystore
+syj12345
+
+alias
+LotteryAh
+pw
+syj54321

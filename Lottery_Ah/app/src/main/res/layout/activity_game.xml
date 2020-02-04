@@ -21,7 +21,7 @@
             <TextView
                 android:textAlignment="center"
                 android:gravity="center_vertical"
-                android:text="YOUR PICKS"
+                android:text="랜덤 로또 번호"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -104,7 +104,7 @@
                         android:textColor="@color/white"
                         android:id="@+id/num05" />
                     <TextView
-                        android:text="Sp"
+                        android:text="6th"
                         android:layout_weight="1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -467,7 +467,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-5527371243503810/6833952534">
+            ads:adUnitId="ca-app-pub-5527371243503810/3528818688">
         </com.google.android.gms.ads.AdView>
         </LinearLayout>
     </LinearLayout>
@@ -493,7 +493,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:text="Touch here ->"
+                    android:text="번호 생성! ->"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -510,7 +510,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="Generate!"
+                    android:text="로또 번호 생성!"
                     android:textSize="30sp" />
             </LinearLayout>
             <LinearLayout
@@ -549,17 +549,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="1game"
+                        android:text="1 게임"
                         android:id="@+id/cnt1" />
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3games"
+                        android:text="3 게임"
                         android:id="@+id/cnt2" />
                     <RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5games"
+                        android:text="5 게임"
                         android:id="@+id/cnt3" />
                 </RadioGroup>
             </LinearLayout>
@@ -587,9 +587,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:checked="true"
-                        android:text="Powerball"
+                        android:text="나눔 로또"
                         android:id="@+id/tp1" />
-                    <RadioButton
+                    <!--<RadioButton
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Mega Million"
@@ -598,7 +598,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Life4Cash"
-                        android:id="@+id/tp3" />
+                        android:id="@+id/tp3" />-->
                 </RadioGroup>
             </LinearLayout>
         </LinearLayout>

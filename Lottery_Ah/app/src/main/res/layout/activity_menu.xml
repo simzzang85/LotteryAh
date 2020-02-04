@@ -12,7 +12,7 @@
         android:layout_weight="3"
         >
         <Button
-            android:text="DRAW"
+            android:text="번호뽑기"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/btnDrawPage" />
@@ -24,7 +24,7 @@
         android:layout_weight="3"
         >
         <Button
-            android:text="PREV LIST"
+            android:text="이전 번호"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/btnListPage" />
@@ -36,7 +36,7 @@
         android:layout_weight="3"
         >
         <Button
-            android:text="SIMULATION"
+            android:text="시뮬레이션"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/btnSimulPage" />
