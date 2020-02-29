@@ -1,5 +1,0 @@
-<%
-	var local = 'Welcome!'; // private variable
-	
-	self.msg = 'Hello World! ' + local;
-%>

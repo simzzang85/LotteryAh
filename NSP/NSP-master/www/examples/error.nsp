@@ -1,8 +1,0 @@
-<!DOCTYPE html>
-<html>
-	<body>
-		<%
-			not_defined_func();
-		%>
-	</body>
-</html>

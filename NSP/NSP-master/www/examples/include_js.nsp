@@ -1,9 +1,0 @@
-<!DOCTYPE html>
-<html>
-	<body>
-		Open JavaScript console.
-		<% include('include/common.js'); %>
-		<script src="include/common.js"></script>
-		<a href="/">Home</a>
-	</body>
-</html>
